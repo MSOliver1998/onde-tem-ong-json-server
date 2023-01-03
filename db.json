@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$RDH546rWSKTsD3UObd9moe6UhwI2QVkUge.Dg/VN8ZZsFP50Cc8Yu",
+      "id": 1
+    },
+    {
+      "email": "ongteste@mail.com",
+      "password": "$2a$10$F86rVsqfX3Be0AKqGWezXOVybMtFsg//vIIcaFWXU/Y/W1FYMVjJu",
+      "id": 2
+    }
+  ],
+  "ongs": []
+}
