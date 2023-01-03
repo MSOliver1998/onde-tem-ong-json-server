@@ -1,6 +1,6 @@
 # rotas
-> base url: localhost:3000
->
+> base url local: localhost:3000
+> base url prod: https://onde-tem-ong.onrender.com/
 
 ## criar usuarios:
 >[POST] /users
