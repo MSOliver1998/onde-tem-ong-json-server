@@ -88,7 +88,7 @@
 :warning:**O usuario deve ser o dono para deletar**
 >**<font color=red>[DELETE]</font> /users/{id}**
 
->body: não requer 
+>body: não requer </br>
 >authorization:`Bearer {token}`
 
 # ONGS
