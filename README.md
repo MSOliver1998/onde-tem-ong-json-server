@@ -12,7 +12,8 @@
 >    "password": "string",
 >    "name": "string",
 >    "avatar": "string",
->    "type": "user/owern_ong"
+>    "type": "user/owner_ong",
+>    "background": "string"
 >  }
 >```
 ></br>
@@ -28,7 +29,8 @@
 >    "password": "string",
 >    "name": "string",
 >    "avatar": "string",
->    "type": "user/owern_ong"
+>    "type": "user/owner_ong",
+>    "background": "string"
 >  }
 >```
 > authorization:`Bearer {token}`
