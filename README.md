@@ -139,7 +139,8 @@
 :warning:**O usuario deve ser o dono para deletar a ong**
 >**<font color=red>[DELETE]</font> /ongs/{id}**
 
->body: não requer </br>
+>body: não requer
+
 >authorization:`Bearer {token}`
 
 
