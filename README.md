@@ -1,12 +1,46 @@
-# rotas
-> base url local: localhost:3000
-> base url prod: https://onde-tem-ong.onrender.com/
-> Json insominia [insominia](https://drive.google.com/file/d/1ziU6G1YYhxEOE3zbr9Hejma3RoyKJI6H/view?usp=share_link)
+# Rotas projeto onde tem ONG?
 
-## criar usuarios:
->[POST] /users
+### Rodar localmente
+``` node
+    $: git@github.com:MSOliver1998/first-json-server.git
+    $: yarn
+    $: yarn add -D json-server json-server-auth
+    $: node server.js
+```
 
->body: 
+
+
+></br>
+>
+> **Base URL Local**: `localhost:3000`
+> **Base URL Prod**: `https://onde-tem-ong.onrender.com`
+> <center><a href='https://drive.google.com/file/d/1ziU6G1YYhxEOE3zbr9Hejma3RoyKJI6H/view?usp=share_link'><img src="./src/logoInsominia.png"width="100" height="100"></a><center>
+
+
+## Users
+| Requisição | Metodo | Endpoint | Token? | Body? | 
+| :---: | :---: | :---: | :---: | :---: |
+| [**Criar usuario**](#criar-usuarios) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> | 
+| [**Login**](#login) | <font color=green>[POST]</font> | /users | <font color=red>NÃO</font> | <font color=green> SIM </font> |
+| [**Editar usuario**](#editar-usuario) | <font color=yellow>[PATCH]</font> | /users/{id} | <font color=green> SIM </font> | <font color=green> SIM </font> |
+| [**Deletar usuario**](#deletar-usuario) | <font color=red>[DELETE]</font> | /users/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
+
+
+## ONGS
+| Requisição | Metodo | Endpoint | Token? | Body? | 
+| :---: | :---: | :---: | :---: | :---: |
+| [**Criar ONG**](#criar-ong) | <font color=green>[POST]</font> |  /ongs | <font color=red>NÃO</font> |<font color=green> SIM </font> | 
+| [**Editar ONG**](#editar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font>| 
+| [**Ajudar ONG**](#ajudar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font> | 
+| [**Deletar ONG**](#deletar-ong) | <font color=red>[DELETE]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
+
+
+# Users
+
+## criar usuario:
+>**<font color=green>[POST] </font>/users**
+
+>body
 >```json
 >  {
 >    "email": "string",
@@ -19,11 +53,24 @@
 >```
 ></br>
 
-## editar usuario:
-**O usuario deve ser dono do perfil para editar**
->[PATCH] /users/{id}
+## login:
+>**<font color=green>[POST] </font>/users**
 
 >body
+>```json
+> {
+>    "email": "string",
+>    "password": "string"
+>  }
+>```
+><br>
+
+## editar usuario:
+
+:warning:**O usuario deve ser dono do perfil para editar**
+>**<font color=yellow>[PATCH] </font>/users/{id}**
+
+> body
 >```json
 >  {
 >    "email": "string",
@@ -37,23 +84,18 @@
 > authorization:`Bearer {token}`
 ></br>
 
+## deletar usuario:
+:warning:**O usuario deve ser o dono para deletar**
+>**<font color=red>[DELETE]</font> /users/{id}**
 
+>body: não requer 
+>authorization:`Bearer {token}`
 
-## login:
->[POST] /login
-
->body
->```json
-> {
->    "email": "string",
->    "password": "string"
->  }
->```
-><br>
+# ONGS
 
 ## criar ong:
->**O usuario deve estar logado para criar uma ong**
->[post]/ongs
+:warning:**O usuario deve estar logado para criar uma ong**
+>**<font color=green>[POST] </font>/ongs**
 
 >body
 >```json
@@ -67,7 +109,7 @@
 ></br>
 
 ## editar ong:
->[PATCH]/ongs/{id}
+>**<font color=yellow>[PATCH]</font> /ongs/{id}**
 
 >body
 >```json
@@ -82,7 +124,7 @@
 ></br>
 
 ## ajudar ong: 
->[PATH] /ongs/{id}
+>**<font color=yellow>[PATCH]</font> /ongs/{id}**
 
 >body
 >```json
@@ -94,8 +136,12 @@
 ></br>
 
 ## deletar ong:
->**O usuario deve ser o dono para deletar a ong**
->[DELETE] /ongs/{id}
+:warning:**O usuario deve ser o dono para deletar a ong**
+>**<font color=red>[DELETE]</font> /ongs/{id}**
 
 >body: não requer 
 >authorization:`Bearer {token}`
+
+
+criado por Matheus Silva de Oliveira ❤️ 
+para um projeto no curso da Kenzie Academy Brasil™
