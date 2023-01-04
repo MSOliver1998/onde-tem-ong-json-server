@@ -20,7 +20,7 @@
 ## Users
 | Requisição | Metodo | Endpoint | Token? | Body? | 
 | :---: | :---: | :---: | :---: | :---: |
-| [**Criar usuario**](#criar-usuarios) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> | 
+| [**Criar usuario**](#criar-usuario) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> | 
 | [**Login**](#login) | <font color=green>[POST]</font> | /users | <font color=red>NÃO</font> | <font color=green> SIM </font> |
 | [**Editar usuario**](#editar-usuario) | <font color=yellow>[PATCH]</font> | /users/{id} | <font color=green> SIM </font> | <font color=green> SIM </font> |
 | [**Deletar usuario**](#deletar-usuario) | <font color=red>[DELETE]</font> | /users/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
@@ -140,6 +140,7 @@
 >**<font color=red>[DELETE]</font> /ongs/{id}**
 
 >body: não requer 
+>
 >authorization:`Bearer {token}`
 
 
