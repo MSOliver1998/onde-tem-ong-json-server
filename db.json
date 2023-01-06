@@ -20,6 +20,13 @@
       "confirmPassword": "ong123",
       "userType": "owerOng",
       "id": 3
+    },
+    {
+      "email": "email@mail.com",
+      "password": "$2a$10$miJ0Ncghh7PwCcMXV74PtuGclBcoJrahDUYLZLLKTOtDhBRp6ZAou",
+      "name": "user",
+      "userType": "user",
+      "id": 4
     }
   ],
   "ongs": [
