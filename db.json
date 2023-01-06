@@ -1,15 +1,63 @@
 {
   "users": [
     {
-      "email": "admin@mail.com",
-      "password": "$2a$10$RDH546rWSKTsD3UObd9moe6UhwI2QVkUge.Dg/VN8ZZsFP50Cc8Yu",
-      "id": 1
+      "email": "ongteste@mail.com",
+      "password": "$2a$10$XMIT3sbu9QVR4RSzumabx.gGJa8vCyAaR2fVsHndY97IWdNQUwGAO",
+      "id": 1,
+      "name": "nome",
+      "avatar": "link",
+      "background": "link"
     },
     {
       "email": "ongteste@mail.com",
       "password": "$2a$10$F86rVsqfX3Be0AKqGWezXOVybMtFsg//vIIcaFWXU/Y/W1FYMVjJu",
       "id": 2
+    },
+    {
+      "email": "ongver@mail.com",
+      "password": "$2a$10$JYCUGRfBDvzUwQK9pa/HdOQe/TOERComfeL0Hiv1DrCfnxRO9x6Bu",
+      "name": "ong ver",
+      "confirmPassword": "ong123",
+      "userType": "owerOng",
+      "id": 3
     }
   ],
-  "ongs": []
+  "ongs": [
+    {
+      "name": "ongTeste",
+      "userId": 2,
+      "bio": "string",
+      "category": "crianças",
+      "id": 1,
+      "background": "link",
+      "avatar": "link"
+    },
+    {
+      "name": "viver para ver",
+      "userId": 3,
+      "bio": "loren ypsulon",
+      "category": "crianças",
+      "id": 4
+    }
+  ],
+  "donates": [
+    {
+      "ongId": 1,
+      "userID": 1,
+      "value": 200,
+      "id": 1
+    },
+    {
+      "ongId": 1,
+      "userID": 1,
+      "value": 100,
+      "id": 2
+    },
+    {
+      "ongId": 1,
+      "userID": 1,
+      "value": 100,
+      "id": 3
+    }
+  ]
 }
