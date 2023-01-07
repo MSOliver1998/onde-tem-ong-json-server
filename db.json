@@ -20,8 +20,6 @@
       "confirmPassword": "ong123",
       "userType": "owerOng",
       "id": 3
-<<<<<<< HEAD
-=======
     },
     {
       "email": "email@mail.com",
@@ -29,7 +27,6 @@
       "name": "user",
       "userType": "user",
       "id": 4
->>>>>>> parent of 3ef288a (filtro das doações)
     }
   ],
   "ongs": [
