@@ -20,20 +20,6 @@
       "name": "user",
       "userType": "user",
       "id": 3
-    },
-    {
-      "email": "user2@mail.com",
-      "password": "$2a$10$DXBEmR1sa2.lAFJRDp7pGeOFkm0yMbLCIBd82ALNud8pO90DzRDo6",
-      "name": "user2",
-      "userType": "user",
-      "id": 4
-    },
-    {
-      "email": "ver2@mail.com",
-      "password": "$2a$10$0nYEF9UTBH3Aj9DuXP1CU.2Wb2ih89IevzqxjlsJ.huryxngGNng.",
-      "name": "ver",
-      "userType": "owernOng",
-      "id": 5
     }
   ],
   "ongs": [

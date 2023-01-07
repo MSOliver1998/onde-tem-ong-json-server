@@ -73,7 +73,7 @@
 
 ## login:
 >### Request
->**<font color=green>[POST] </font>/login**
+>**<font color=green>[POST] </font>/users**
 
 >body
 >```json
