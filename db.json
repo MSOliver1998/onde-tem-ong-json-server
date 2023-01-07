@@ -1,70 +1,84 @@
 {
   "users": [
     {
-      "email": "ongteste@mail.com",
-      "password": "$2a$10$XMIT3sbu9QVR4RSzumabx.gGJa8vCyAaR2fVsHndY97IWdNQUwGAO",
-      "id": 1,
-      "name": "nome",
-      "avatar": "link",
-      "background": "link"
+      "email": "ver@mail.com",
+      "password": "$2a$10$LI2646ADTI2eNf61kyyO/uJoMEQhTkI2gvNBc3UB8WL6dEzErmYI.",
+      "name": "user",
+      "userType": "owernOng",
+      "id": 1
     },
     {
-      "email": "ongteste@mail.com",
-      "password": "$2a$10$F86rVsqfX3Be0AKqGWezXOVybMtFsg//vIIcaFWXU/Y/W1FYMVjJu",
+      "email": "admin@mail.com",
+      "password": "$2a$10$EYBvvXZPcEAlF.DiOwaQaOqSgjCPq.Bk/1bmXHSGBzPkNPXIfXBF.",
+      "name": "user",
+      "userType": "owernOng",
       "id": 2
     },
     {
-      "email": "ongver@mail.com",
-      "password": "$2a$10$JYCUGRfBDvzUwQK9pa/HdOQe/TOERComfeL0Hiv1DrCfnxRO9x6Bu",
-      "name": "ong ver",
-      "confirmPassword": "ong123",
-      "userType": "owerOng",
+      "email": "user@mail.com",
+      "password": "$2a$10$urPtA1zj0qb4Ig125eAbweL9p1Zf/NxdQqt1LNwfcOGdafqdjmYbu",
+      "name": "user",
+      "userType": "user",
       "id": 3
     },
     {
-      "email": "email@mail.com",
-      "password": "$2a$10$miJ0Ncghh7PwCcMXV74PtuGclBcoJrahDUYLZLLKTOtDhBRp6ZAou",
-      "name": "user",
+      "email": "user2@mail.com",
+      "password": "$2a$10$DXBEmR1sa2.lAFJRDp7pGeOFkm0yMbLCIBd82ALNud8pO90DzRDo6",
+      "name": "user2",
       "userType": "user",
       "id": 4
+    },
+    {
+      "email": "ver2@mail.com",
+      "password": "$2a$10$0nYEF9UTBH3Aj9DuXP1CU.2Wb2ih89IevzqxjlsJ.huryxngGNng.",
+      "name": "ver",
+      "userType": "owernOng",
+      "id": 5
     }
   ],
   "ongs": [
     {
-      "name": "ongTeste",
+      "name": "criança esperança",
       "userId": 2,
-      "bio": "string",
-      "category": "crianças",
-      "id": 1,
-      "background": "link",
-      "avatar": "link"
+      "id": 1
     },
     {
-      "name": "viver para ver",
-      "userId": 3,
-      "bio": "loren ypsulon",
+      "name": "ver para crer",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "ver para crer",
+      "bio": "loren ipsulon",
       "category": "crianças",
-      "id": 4
+      "userId": 1,
+      "id": 3
     }
   ],
   "donates": [
     {
-      "ongId": 1,
-      "userID": 1,
-      "value": 200,
+      "userId": 1,
+      "ongId": 2,
+      "value": 300,
       "id": 1
     },
     {
-      "ongId": 1,
-      "userID": 1,
-      "value": 100,
+      "userId": 4,
+      "ongId": 2,
+      "value": 300,
       "id": 2
     },
     {
+      "userId": 4,
       "ongId": 1,
-      "userID": 1,
       "value": 100,
       "id": 3
+    },
+    {
+      "userId": 4,
+      "ongId": 2,
+      "value": 100,
+      "id": 4
     }
   ]
 }
