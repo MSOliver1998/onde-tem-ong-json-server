@@ -27,6 +27,13 @@
       "name": "user",
       "userType": "user",
       "id": 4
+    },
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$nLH4FXQGB8xLxA7FLcJ9M.xuh9YhDOCQ26HblaURRl5ReZY2zUtWO",
+      "name": "ver",
+      "userType": "owernOng",
+      "id": 5
     }
   ],
   "ongs": [
@@ -45,6 +52,13 @@
       "bio": "loren ypsulon",
       "category": "crianças",
       "id": 4
+    },
+    {
+      "name": "ver para crer",
+      "bio": "loren ipsulon",
+      "category": "crianças",
+      "userId": 1,
+      "id": 5
     }
   ],
   "donates": [

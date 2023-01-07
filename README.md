@@ -22,6 +22,7 @@
 | :---: | :---: | :---: | :---: | :---: |
 | [**Criar usuario**](#criar-usuario) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> | 
 | [**Login**](#login) | <font color=green>[POST]</font> | /users | <font color=red>NÃO</font> | <font color=green> SIM </font> |
+| [**Doações do usuario**](#doações-para-ong) | <font color=blueviolet>[GET]</font> |  /user/donates/{ID} | <font color=green> SIM </font> | <font color=red>NÃO</font>|
 | [**Editar usuario**](#editar-usuario) | <font color=yellow>[PATCH]</font> | /users/{id} | <font color=green> SIM </font> | <font color=green> SIM </font> |
 | [**Deletar usuario**](#deletar-usuario) | <font color=red>[DELETE]</font> | /users/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
 
@@ -30,7 +31,9 @@
 | Requisição | Metodo | Endpoint | Token? | Body? | 
 | :---: | :---: | :---: | :---: | :---: |
 | [**Criar ONG**](#criar-ong) | <font color=green>[POST]</font> |  /ongs | <font color=red>NÃO</font> |<font color=green> SIM </font> | 
-| [**Editar ONG**](#editar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font>| 
+| [**Editar ONG**](#editar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font>|
+| [**Doar para ONG**](#doar-para-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> |
+| [**Doações para ong**](#doações-para-ong) | <font color=blueviolet>[GET]</font> |  /ong/donates/{ID} | <font color=green> SIM </font> | <font color=red>NÃO</font>|  
 | [**Ajudar ONG**](#ajudar-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> | 
 | [**Deletar ONG**](#deletar-ong) | <font color=red>[DELETE]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
 
@@ -94,6 +97,33 @@
     }
 }
 ```
+
+## doações do usuário:
+>### Request
+>**<font color=blueviolet>[GET]</font> /user/donates/{ID}**
+>body não requer</br> 
+>authorization:`Bearer {token}`
+>### Response api
+>```json
+>[
+>	{
+>		"userId": "number",
+>		"ongId": "number",
+>		"value": "number",
+>		"id": "number"
+>	},
+>	{
+>		"userId": "number",
+>		"ongId": "number",
+>		"value": "number",
+>		"id": "number"
+>	}
+>]
+>```
+>
+></br>
+
+
 ## editar usuario:
 
 :warning:**O usuario deve ser dono do perfil para editar**
@@ -229,6 +259,32 @@
 >}
 >```
 ></br>
+
+## doações para ong
+>### Request
+>**<font color=blueviolet>[GET]</font> /ong/donates/{ID}**
+>body não requer</br> 
+>authorization:`Bearer {token}`
+>### Response api
+>```json
+>[
+>   {
+>		"userId": "number",
+>		"ongId": "number",
+>		"value": "number",
+>		"id": "number"
+>	},
+>   {
+>		"userId": "number",
+>		"ongId": "number",
+>		"value": "number",
+>		"id": "number"
+>	},
+>]
+>```
+>
+></br>
+
 
 ## deletar ong:
 :warning:**O usuario deve ser o dono para deletar a ong**
