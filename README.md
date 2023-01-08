@@ -305,7 +305,7 @@
 ></br>
 
 
-## ajudar ong: 
+## doar para ong: 
 >### Request
 >**<font color=green>[POST]</font> /donates**
 
