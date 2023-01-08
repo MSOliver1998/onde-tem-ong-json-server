@@ -114,12 +114,14 @@
 >		"userId": "number",
 >		"ongId": "number",
 >		"value": "number",
+>       "public": "true/false",
 >		"id": "number"
 >	},
 >	{
 >		"userId": "number",
 >		"ongId": "number",
 >		"value": "number",
+>       "public": "true/false",
 >		"id": "number"
 >	}
 >]
@@ -190,8 +192,6 @@
 >   {}
 >```
 ></br>
-
-
 
 # ONGS
 
@@ -314,7 +314,8 @@
 > {
 >   "ongId":"number",
 >   "userId": "number",
->   "value": "number"
+>   "value": "number",
+>   "public": "true/false"
 >  }
 >```
 > authorization:`Bearer {token}`
@@ -343,12 +344,14 @@
 >		"userId": "number",
 >		"ongId": "number",
 >		"value": "number",
+>       "public": "true/false",
 >		"id": "number"
 >	},
 >   {
 >		"userId": "number",
 >		"ongId": "number",
 >		"value": "number",
+>       "public": "true/false",
 >		"id": "number"
 >	},
 >]
