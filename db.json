@@ -38,11 +38,13 @@
       "id": 1
     },
     {
-      "name": "criança esperança",
+      "name": "ongTeste",
       "bio": "loren ipsulon",
       "category": "crianças",
       "userId": 4,
-      "id": 2
+      "id": 3,
+      "background": "link",
+      "avatar": "link"
     }
   ],
   "donates": [
