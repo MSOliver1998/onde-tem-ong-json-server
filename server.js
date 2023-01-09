@@ -12,7 +12,7 @@ const rules = auth.rewriter({
   users: 640,
   ongs: 664,
   donates:660,
-  "/user/donates/:userId": "/660/donates?userId=:userId",
+  "/user/donates/:userId": "/660/donates?user.userId=:userId",
   "/ong/donates/:ongId": "/660/donates?ongId=:ongId"
 });
 

@@ -47,25 +47,31 @@
   ],
   "donates": [
     {
-      "userId": 1,
+      "user":{
+        "userId":1,"name":"admin","avatar":"algum link"
+      },
       "ongId": 1,
       "public": "true",
       "value": 150,
       "id": 1
     },
     {
-      "userId": 1,
-      "ongId": 2,
+      "user":{
+        "userId":1,"name":"admin","avatar":"algum link"
+      },
+      "ongId": 1,
       "public": "true",
       "value": 150,
-      "id": 2
+      "id": 1
     },
     {
-      "userId": 2,
-      "ongId": 2,
+      "user":{
+        "userId":2,"name":"user teste","avatar":"algum link"
+      },
+      "ongId": 1,
       "public": "true",
       "value": 150,
-      "id": 3
+      "id": 1
     }
   ]
 }

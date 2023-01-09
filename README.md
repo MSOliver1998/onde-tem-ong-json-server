@@ -111,14 +111,14 @@
 >```json
 >[
 >	{
->		"userId": "number",
+>       "user":{"userID": "number","name":"string","avatar":"string"},
 >		"ongId": "number",
 >		"value": "number",
 >       "public": "true/false",
 >		"id": "number"
 >	},
 >	{
->		"userId": "number",
+>       "user":{"userID": "number","name":"string","avatar":"string"},
 >		"ongId": "number",
 >		"value": "number",
 >       "public": "true/false",
@@ -313,7 +313,7 @@
 >```json
 > {
 >   "ongId":"number",
->   "userId": "number",
+>   "user":{"userID": "number","name":"string","avatar":"string"},
 >   "value": "number",
 >   "public": "true/false"
 >  }
@@ -325,7 +325,7 @@
 >```json
 >{
 >	"ongId": "number",
->	"userID": "number",
+>   "user":{"userID": "number","name":"string","avatar":"string"},
 >	"value": "number",
 >	"id": "number"
 >}
