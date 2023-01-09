@@ -47,31 +47,49 @@
   ],
   "donates": [
     {
-      "user":{
-        "userId":1,"name":"admin","avatar":"algum link"
+      "user": {
+        "userId": "1",
+        "name": "admin",
+        "avatar": "algum"
       },
-      "ongId": 1,
+      "ong": {
+        "ongId": 1,
+        "name": "ver para crer",
+        "avatar": "link"
+      },
       "public": "true",
-      "value": 150,
+      "value": 100,
       "id": 1
     },
     {
-      "user":{
-        "userId":1,"name":"admin","avatar":"algum link"
+      "user": {
+        "userId": 1,
+        "name": "admin",
+        "avatar": "algum"
       },
-      "ongId": 1,
+      "ong": {
+        "ongId": 1,
+        "name": "ver para crer",
+        "avatar": "link"
+      },
       "public": "true",
-      "value": 150,
-      "id": 1
+      "value": 100,
+      "id": 2
     },
     {
-      "user":{
-        "userId":2,"name":"user teste","avatar":"algum link"
+      "user": {
+        "userId": 1,
+        "name": "admin",
+        "avatar": "algum"
       },
-      "ongId": 1,
-      "public": "true",
-      "value": 150,
-      "id": 1
+      "ong": {
+        "ongId": 1,
+        "name": "ver para crer",
+        "avatar": "link"
+      },
+      "public": true,
+      "value": 100,
+      "id": 3
     }
   ]
 }

@@ -111,15 +111,15 @@
 >```json
 >[
 >	{
->       "user":{"userID": "number","name":"string","avatar":"string"},
->		"ongId": "number",
+>       "user":{"userId": "number","name":"string","avatar":"string"},
+>		"ong":{"ongId":"number","name":"string","avatar":"string"},
 >		"value": "number",
 >       "public": "true/false",
 >		"id": "number"
 >	},
 >	{
->       "user":{"userID": "number","name":"string","avatar":"string"},
->		"ongId": "number",
+>       "user":{"userId": "number","name":"string","avatar":"string"},
+>		"ong":{"ongId":"number","name":"string","avatar":"string"},
 >		"value": "number",
 >       "public": "true/false",
 >		"id": "number"
@@ -312,8 +312,8 @@
 >body
 >```json
 > {
->   "ongId":"number",
->   "user":{"userID": "number","name":"string","avatar":"string"},
+>   "ong":{"ongId":"number","name":"string","avatar":"string"},
+>   "user":{"userId": "number","name":"string","avatar":"string"},
 >   "value": "number",
 >   "public": "true/false"
 >  }
@@ -324,8 +324,8 @@
 >### Response api
 >```json
 >{
->	"ongId": "number",
->   "user":{"userID": "number","name":"string","avatar":"string"},
+>	"ong":{"ongId":"number","name":"string","avatar":"string"},
+>   "user":{"userId": "number","name":"string","avatar":"string"},
 >	"value": "number",
 >	"id": "number"
 >}
@@ -341,15 +341,15 @@
 >```json
 >[
 >   {
->		"userId": "number",
->		"ongId": "number",
+>		"user":{"userId": "number","name":"string","avatar":"string"},
+>		"ong":{"ongId":"number","name":"string","avatar":"string"},
 >		"value": "number",
 >       "public": "true/false",
 >		"id": "number"
 >	},
 >   {
->		"userId": "number",
->		"ongId": "number",
+>		"user":{"userId": "number","name":"string","avatar":"string"},
+>		"ong":{"ongId":"number","name":"string","avatar":"string"},
 >		"value": "number",
 >       "public": "true/false",
 >		"id": "number"

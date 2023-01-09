@@ -13,7 +13,7 @@ const rules = auth.rewriter({
   ongs: 664,
   donates:660,
   "/user/donates/:userId": "/660/donates?user.userId=:userId",
-  "/ong/donates/:ongId": "/660/donates?ongId=:ongId"
+  "/ong/donates/:ongId": "/660/donates?ong.ongId=:ongId"
 });
 
 app.use(cors());
