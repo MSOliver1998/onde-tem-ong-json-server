@@ -45,6 +45,54 @@
       "name": "ong 3",
       "userType": "owerOng",
       "id": 4
+    },
+    {
+      "email": "ong4@mail.com",
+      "password": "$2a$10$n6IfM8k2MndSRNB7c2pZ2uG7gfjWxTTZqDv2Jrsnuj7hHLLHNGBvG",
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "category": "crianças",
+      "metas": 0,
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "ong 3",
+      "userType": "owerOng",
+      "id": 5
+    },
+    {
+      "email": "ong5@mail.com",
+      "password": "$2a$10$wSjM9J0kPye2MjbXi2cDsOjUK07GvjlBZbZ8CLOLrLTDVR6NbRKXm",
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "category": "crianças",
+      "metas": 0,
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "ong 3",
+      "userType": "owerOng",
+      "id": 6
+    },
+    {
+      "email": "ong6@mail.com",
+      "password": "$2a$10$zM8por1LbmX0I14gbdpOj.AyGbOerjnsdrAGOByoYs4MiF.kVlQya",
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "category": "crianças",
+      "metas": 0,
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "ong 3",
+      "userType": "owerOng",
+      "id": 7
+    },
+    {
+      "email": "ong7@mail.com",
+      "password": "$2a$10$dfTh0GIhb8igVWgilLlpheovt/neHPaudA3AfTlI16ZqWzK11P7QK",
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "category": "crianças",
+      "metas": 0,
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "ong 3",
+      "userType": "owerOng",
+      "id": 8
     }
   ],
   "donates": [
