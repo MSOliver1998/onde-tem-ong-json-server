@@ -123,7 +123,8 @@
 		"ong": {
 			"ongId": "number",
 			"name": "string",
-			"avatar": "string"
+			"avatar": "string",
+			"bio":"string"
 		},
 		"public": "boolean",
 		"value": "number",
@@ -332,7 +333,7 @@ authorization:`Bearer {token}`
 body
 ```json
  {
-   "ong":{"ongId":"number","name":"string","avatar":"string"},
+   "ong":{"ongId":"number","name":"string","avatar":"string","bio":"string"},
    "user":{"userId": "number","name":"string","avatar":"string"},
    "value": "number",
    "public": "true/false"
@@ -344,7 +345,7 @@ body
 >### Response api
 ```json
 {
-	"ong":{"ongId":"number","name":"string","avatar":"string"},
+	"ong":{"ongId":"number","name":"string","avatar":"string","bio":"string"},
    "user":{"userId": "number","name":"string","avatar":"string"},
 	"value": "number",
 	"id": "number"
@@ -364,14 +365,14 @@ authorization:`Bearer {token}`
 [
    {
 		"user":{"userId": "number","name":"string","avatar":"string"},
-		"ong":{"ongId":"number","name":"string","avatar":"string"},
+		"ong":{"ongId":"number","name":"string","avatar":"string","bio":"string"},
 		"value": "number",
        "public": "true/false",
 		"id": "number"
 	},
    {
 		"user":{"userId": "number","name":"string","avatar":"string"},
-		"ong":{"ongId":"number","name":"string","avatar":"string"},
+		"ong":{"ongId":"number","name":"string","avatar":"string","bio":"string"},
 		"value": "number",
        "public": "true/false",
 		"id": "number"
