@@ -20,8 +20,8 @@
 ## Users
 | Requisição | Metodo | Endpoint | Token? | Body? | 
 | :---: | :---: | :---: | :---: | :---: |
-| [**Criar usuario**](#criar-usuario) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> | 
-| [**Login**](#login) | <font color=green>[POST]</font> | /users | <font color=red>NÃO</font> | <font color=green> SIM </font> |
+| [**Cria usuario**](#criar-usuario) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> | 
+| [**Login**](#login) | <font color=green>[POST]</font> | /login | <font color=red>NÃO</font> | <font color=green> SIM </font> |
 | [**usuario por Id**](#user-por-id)|  <font color=blueviolet>[GET]</font> | /users/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> |  
 | [**Doações feitas**](#doações-feitas) | <font color=blueviolet>[GET]</font> |  /users/donates/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font>|
 | [**Editar usuario**](#editar-usuario) | <font color=yellow>[PATCH]</font> | /users/{id} | <font color=green> SIM </font> | <font color=green> SIM </font> |
@@ -31,10 +31,10 @@
 ## ONGS
 | Requisição | Metodo | Endpoint | Token? | Body? | 
 | :---: | :---: | :---: | :---: | :---: |
-| [**Criar ONG**](#criar-ong) | <font color=green>[POST]</font> |  /ongs | <font color=red>NÃO</font> |<font color=green> SIM </font> | 
+| [**Criar ONG**](#criar-ong) | <font color=green>[POST]</font> |  /users | <font color=red>NÃO</font> |<font color=green> SIM </font> | 
 | [**Editar ONG**](#editar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font>|
-| [**ONG por Id do dono**](#ong-por-id-do-dono)|  <font color=blueviolet>[GET]</font> | /ong/{user_id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
-| [**Todas as ONG's**](#todas-as-ongs)|  <font color=blueviolet>[GET]</font> | /ongs/{id} | <font color=red>NÃO</font>| <font color=red>NÃO</font> | 
+| [**ONG por Id**](#ong-por-id)|  <font color=blueviolet>[GET]</font> | /users/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
+| [**Todas as ONG's**](#todas-as-ongs)|  <font color=blueviolet>[GET]</font> | /users/ong | <font color=red>NÃO</font>| <font color=red>NÃO</font> | 
 | [**Doar para ONG**](#doar-para-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> |
 | [**Doações recebidas**](#doações-recebidas) | <font color=blueviolet>[GET]</font> |  /ong/donates/{ID} | <font color=green> SIM </font> | <font color=red>NÃO</font>|  
 | [**Ajudar ONG**](#ajudar-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> | 
@@ -48,30 +48,29 @@
 >### Request
 >**<font color=green>[POST] </font>/users**
 
->body
->```json
->  {
->    "email": "string",
->    "password": "string",
->    "name": "string",
->	 "userType":"owerOng/user" ,
->    "avatar": "string",
->    "background": "string"
->  }
->```
-></br>
-
+>#### body
+```json
+    "avatar":"link",
+    "background":"link",
+    "bio":"string",
+    "email": "email",
+    "name": "string",
+    "password": "string",
+    "userType": "user",
+```
 >### Response api
 ``` json
-{
-    "accessToken": "token do usuario",
-    "user": {
-        "email": "ongver@mail.com",
-        "name": "string",
-        "userType": "owerOng/user",
-        "id": 3
+    {
+        "accessToken": "string",
+        "user": {
+            "email": "string",
+            "avatar": "string",
+            "background": "string",
+            "name": "string",
+            "userType": "user",
+            "id": "number"
+        }
     }
-}
 ``` 
 </br>
 
@@ -80,54 +79,59 @@
 >### Request
 >**<font color=green>[POST] </font>/users**
 
->body
->```json
->{
->    "email": "string",
->    "password": "string"
->}
->```
-></br>
+>#### **body**
+```json
+{
+    "email": "string",
+    "password": "string"
+}
+```
 
 >### Response api
 
 ``` json
 {
-    "accessToken": "token do usuario",
-    "user": {
-        "email": "string",
-        "id": "number"
-    }
+	"accessToken": "string",
+	"user": {
+		"email": "string",
+		"avatar": "string",
+		"background": "string",
+		"bio": "string",
+		"name": "string",
+		"userType": "string",
+		"id": "number"
+	}
 }
 ```
 
 ## doações feitas:
 >### Request
 >**<font color=blueviolet>[GET]</font> /user/donates/{ID}**
->body não requer</br> 
->authorization:`Bearer {token}`
+>#### body 
+>não requer</br> 
+>**authorization**:`Bearer {token}`
 
 >### Response api
->```json
->[
->	{
->       "user":{"userId": "number","name":"string","avatar":"string"},
->		"ong":{"ongId":"number","name":"string","avatar":"string"},
->		"value": "number",
->       "public": "true/false",
->		"id": "number"
->	},
->	{
->       "user":{"userId": "number","name":"string","avatar":"string"},
->		"ong":{"ongId":"number","name":"string","avatar":"string"},
->		"value": "number",
->       "public": "true/false",
->		"id": "number"
->	}
->]
->```
->
-></br>
+```json
+[
+	{
+		"user": {
+			"userId": "number",
+			"name": "string",
+			"avatar": "string"
+		},
+		"ong": {
+			"ongId": "number",
+			"name": "string",
+			"avatar": "string"
+		},
+		"public": "boolean",
+		"value": "number",
+		"id": "number"
+	}
+]
+```
+</br>
 
 ## user por Id:
 >### Request
@@ -136,17 +140,19 @@
 >authorization:`Bearer {token}`
 
 >### Response api
->```json
->{
->	"email": "string",
->	"password": "string",
->	"id": "number",
->	"name": "string",
->	"avatar": "string",
->	"background": "string"
->}
->``` 
-></br>
+```json
+{
+	"email": "string",
+	"password": "string",
+	"avatar": "string",
+	"background": "string",
+	"bio": "string",
+	"name": "string",
+	"userType": "user",
+	"id":"number"
+}
+``` 
+</br>
 
 ## editar usuario:
 
@@ -154,30 +160,36 @@
 > ### Request
 >**<font color=yellow>[PATCH] </font>/users/{id}**
 
-> body
->```json
->  {
->    "email": "string",
->    "password": "string",
->    "name": "string",
->    "avatar": "string",
->    "background": "string"
->  }
->```
-> authorization:`Bearer {token}`
-></br>
+>#### body
+```json
+  {
+    "email": "string",
+    "password": "string",
+    "name": "string",
+    "avatar": "string",
+    "background": "string"
+  }
+```
+> **authorization**:
+```java script 
+    Bearer {token}
+```
+</br>
 
 > ### Response api
->``` json
->    {
->        "email": "string",
->        "password": "string",
->        "name": "string",
->        "avatar": "string",
->        "background": "string"
->    }
->```
-></br>
+``` json
+{
+	"email": "string",
+	"password": "string",
+	"avatar": "string",
+	"background": "string",
+	"name": "string",
+	"userType": "user",
+	"id": "number",
+	"bio": "string"
+}
+```
+</br>
 
 ## deletar usuario:
 :warning:**O usuario deve ser o dono para deletar**
@@ -201,32 +213,45 @@
 >**<font color=green>[POST] </font>/ongs**
 
 >body
->```json
->  {
->    "userId":"number",
->    "name": "string",
->    "bio": "string",
->    "category": "string",
->  }
->```
->authorization:`Bearer {token}`
-></br>
+```json
+    {
+        "avatar":"link",
+        "background":"link",
+        "category": "string",
+        "email": "email",
+        "bio":"string",
+        "metas":"number",
+        "name": "string",
+        "password": "string",
+        "userType": "owerOng",
+    }
+```
+>**authorization**:
+```java script 
+    Bearer {token}
+```
 
 >### Response api
->```json
->{
->	"name": "string",
->	"userId": "number",
->	"bio": "string",
->	"category": "string",
->	"id": "number"
->}
->```
-></br>
+```json
+{
+	"accessToken": "string",
+	"user": {
+		"email": "email",
+		"avatar": "string",
+		"background": "stringg",
+		"category": "string",
+		"metas": "number",
+		"name": "string",
+		"userType": "owerOng",
+		"id": "string"
+	}
+}
+```
+</br>
 
 ## todas as ongs:
 >### Request
->**<font color=blueviolet>[GET]</font> /ongs**
+>**<font color=blueviolet>[GET]</font> /users/ongs**
 >body **não requer**</br> 
 >authorization:**não requer**
 
@@ -254,110 +279,114 @@
 ></br>
 
 
-## ong por Id do dono:
+## ong por Id:
 >### Request
->**<font color=blueviolet>[GET]</font> /ong/{user_Id}**
+>**<font color=blueviolet>[GET]</font> /ong/{id}**
 >body não requer</br> 
 >authorization:`Bearer {token}`
 
 >### Response api
->```json
->{
->	"name": "string",
->	"userId": "number",
->	"bio": "string",
->	"category": "string",
->	"id": "number",
->	"background": "string",
->	"avatar": "string"
->}
->``` 
-></br>
+```json
+{
+	"email": "string",
+	"password": "string",
+	"avatar": "string",
+	"background": "string",
+	"category": "string",
+	"metas": "number",
+	"name": "string",
+	"userType": "owerOng",
+	"id": "string",
+	"bio": "string"
+}
+``` 
+</br>
 
 
 ## editar ong:
 >**<font color=yellow>[PATCH]</font> /ongs/{id}**
 
->body
->```json
->{
->	"name":"string",
->	"bio":"string",
->	"background":"string",
->	"avatar":"string"
->}
->```
->authorization:`Bearer {token}`
-></br>
+body
+```json
+{
+	"name":"string",
+	"bio":"string",
+	"background":"string",
+	"avatar":"string"
+}
+```
+authorization:`Bearer {token}`
+</br>
 
 >### Request api
->```json
->{
->	"name": "string",
->	"userId": "number",
->	"bio": "string",
->	"category": "string",
->	"id": "number",
->	"background": "string",
->	"avatar": "string"
->}
->```
-></br>
+```json
+{
+	"name": "string",
+	"userId": "number",
+	"bio": "string",
+	"category": "string",
+	"id": "number",
+	"background": "string",
+	"avatar": "string"
+}
+```
+</br>
 
 
 ## doar para ong: 
 >### Request
 >**<font color=green>[POST]</font> /donates**
 
->body
->```json
-> {
->   "ong":{"ongId":"number","name":"string","avatar":"string"},
->   "user":{"userId": "number","name":"string","avatar":"string"},
->   "value": "number",
->   "public": "true/false"
->  }
->```
-> authorization:`Bearer {token}`
-></br>
+body
+```json
+ {
+   "ong":{"ongId":"number","name":"string","avatar":"string"},
+   "user":{"userId": "number","name":"string","avatar":"string"},
+   "value": "number",
+   "public": "true/false"
+  }
+```
+ authorization:`Bearer {token}`
+</br>
 
 >### Response api
->```json
->{
->	"ong":{"ongId":"number","name":"string","avatar":"string"},
->   "user":{"userId": "number","name":"string","avatar":"string"},
->	"value": "number",
->	"id": "number"
->}
->```
-></br>
+```json
+{
+	"ong":{"ongId":"number","name":"string","avatar":"string"},
+   "user":{"userId": "number","name":"string","avatar":"string"},
+	"value": "number",
+	"id": "number"
+}
+```
+</br>
 
 ## doações recebidas:
 >### Request
 >**<font color=blueviolet>[GET]</font> /ong/donates/{ID}**
->body não requer</br> 
->authorization:`Bearer {token}`
->### Response api
->```json
->[
->   {
->		"user":{"userId": "number","name":"string","avatar":"string"},
->		"ong":{"ongId":"number","name":"string","avatar":"string"},
->		"value": "number",
->       "public": "true/false",
->		"id": "number"
->	},
->   {
->		"user":{"userId": "number","name":"string","avatar":"string"},
->		"ong":{"ongId":"number","name":"string","avatar":"string"},
->		"value": "number",
->       "public": "true/false",
->		"id": "number"
->	},
->]
->```
->
-></br>
+
+body não requer</br> 
+authorization:`Bearer {token}`
+
+### Response api
+```json
+[
+   {
+		"user":{"userId": "number","name":"string","avatar":"string"},
+		"ong":{"ongId":"number","name":"string","avatar":"string"},
+		"value": "number",
+       "public": "true/false",
+		"id": "number"
+	},
+   {
+		"user":{"userId": "number","name":"string","avatar":"string"},
+		"ong":{"ongId":"number","name":"string","avatar":"string"},
+		"value": "number",
+       "public": "true/false",
+		"id": "number"
+	},
+]
+```
+</br>
 
 
 ## deletar ong:
@@ -368,10 +397,10 @@
 >authorization:`Bearer {token}`
 
 >### Response api
->```
->{}
->```
-></br>
+```json
+{}
+```
+</br>
 
 
 criado por Matheus Silva de Oliveira ❤️ 

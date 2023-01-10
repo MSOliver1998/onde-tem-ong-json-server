@@ -1,97 +1,67 @@
 {
   "users": [
     {
-      "email": "admin@mail.com",
-      "password": "$2a$10$MvvfrAN1fgO.eH3gt8Rn7.efCFnalLJbNzgbOLD/eBvczmfSS/plG",
-      "name": "admin",
-      "userType": "user",
-      "id": 1
+      "email": "ong2@mail.com",
+      "password": "$2a$10$eAEo.Gy8CYYLL1z/363LfOrc4yXb02CDNlCF93uMNK9o0BE97qEny",
+      "avatar": "https://th.bing.com/th/id/OIP.-U-OLlpFDSbM0dE7EBqNGgHaD4?w=311&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "background": "https://th.bing.com/th/id/OIP.CAcvHLwBeLmIq-RHjBjWPQHaCu?w=309&h=129&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "category": "crianças",
+      "metas": 2000,
+      "name": "ongTeste",
+      "userType": "owerOng",
+      "id": 1,
+      "bio": "bla bla bla"
     },
     {
-      "email": "userteste@mail.com",
-      "password": "$2a$10$pSf9pvoLX9rJfV7ikWJfe.5MN.fdit5.WBg6WmR3TaCTHweiwi5Au",
-      "name": "user teste",
+      "email": "admin@mail.com",
+      "password": "$2a$10$ofCGfMATQkGEHN8GWCb7p.GTJTiF01EbSaFQIKs2/vURmy8KTYZPu",
+      "avatar": "https://th.bing.com/th/id/OIP.ncOCV5LVCL8j70Edjgyn6QHaGy?w=199&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "background": "https://th.bing.com/th/id/OIP.erUrj5Cz3rbYR--457ljMQHaCv?w=318&h=129&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "bio": "bla bla bla",
+      "name": "admin",
       "userType": "user",
       "id": 2
     },
     {
       "email": "ong1@mail.com",
-      "password": "$2a$10$yP3Jwqs3EKB8masv/QV5Z..8E2EDo0y0Ca0VIqNRxh3gwPkJB3n2u",
+      "password": "$2a$10$HWYWR3Rpr/mdDywpJ3mZ4.cXmLFN20BcP5zD6RjWPfbq3bPgazVnS",
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "bio": "bla bla bla",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "category": "crianças",
+      "metas": 0,
       "name": "ong 1",
       "userType": "owerOng",
       "id": 3
     },
     {
-      "email": "ong2@mail.com",
-      "password": "$2a$10$AbMl7fLGF0xeBh052J6YTeqWQ/xzIxPJxiwWg9jqJ3UitUG.ICkSu",
-      "name": "ong 2",
+      "email": "ong3@mail.com",
+      "password": "$2a$10$dNdoi8CP2U5Pw5XwXW4awu2LMW5qEulty4Oz4Zr3owO9l6H98k5RW",
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "bio": "bla bla bla",
+      "category": "crianças",
+      "metas": 0,
+      "name": "ong 3",
       "userType": "owerOng",
       "id": 4
-    }
-  ],
-  "ongs": [
-    {
-      "name": "ver para crer",
-      "bio": "loren ipsulon",
-      "category": "crianças",
-      "userId": 3,
-      "id": 1
-    },
-    {
-      "name": "ongTeste",
-      "bio": "loren ipsulon",
-      "category": "crianças",
-      "userId": 4,
-      "id": 3,
-      "background": "link",
-      "avatar": "link"
     }
   ],
   "donates": [
     {
       "user": {
-        "userId": "1",
+        "userId": 2,
         "name": "admin",
-        "avatar": "algum"
+        "avatar": "https://th.bing.com/th/id/OIP.ncOCV5LVCL8j70Edjgyn6QHaGy?w=199&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
       },
       "ong": {
         "ongId": 1,
-        "name": "ver para crer",
-        "avatar": "link"
-      },
-      "public": "true",
-      "value": 100,
-      "id": 1
-    },
-    {
-      "user": {
-        "userId": 1,
-        "name": "admin",
-        "avatar": "algum"
-      },
-      "ong": {
-        "ongId": 1,
-        "name": "ver para crer",
-        "avatar": "link"
-      },
-      "public": "true",
-      "value": 100,
-      "id": 2
-    },
-    {
-      "user": {
-        "userId": 1,
-        "name": "admin",
-        "avatar": "algum"
-      },
-      "ong": {
-        "ongId": 1,
-        "name": "ver para crer",
-        "avatar": "link"
+        "name": "ong 1",
+        "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1"
       },
       "public": true,
-      "value": 100,
-      "id": 3
+      "value": 1000,
+      "id": 1
     }
   ]
 }
