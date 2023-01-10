@@ -11,10 +11,10 @@ app.db = router.db;
 const rules = auth.rewriter({
   donates:660,
   "/users/user":"/640/users?userType=user",
-  "/users/ong":"/644/users?userType=owerOng",
+  "/ongs":"/644/users?userType=owerOng",
   "/user/donates/:userId": "/660/donates?user.userId=:userId",
   "/ong/donates/:ongId": "/660/donates?ong.ongId=:ongId",
-  "/ong/:id":"/660/users/ong/ong?id=:id"
+  "/ong/:id":"/660/ongs?id=:id"
 });
 
 app.use(cors());

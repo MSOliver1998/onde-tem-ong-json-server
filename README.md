@@ -33,8 +33,8 @@
 | :---: | :---: | :---: | :---: | :---: |
 | [**Criar ONG**](#criar-ong) | <font color=green>[POST]</font> |  /users | <font color=red>NÃO</font> |<font color=green> SIM </font> | 
 | [**Editar ONG**](#editar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font>|
-| [**ONG por Id**](#ong-por-id)|  <font color=blueviolet>[GET]</font> | /users/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
-| [**Todas as ONG's**](#todas-as-ongs)|  <font color=blueviolet>[GET]</font> | /users/ong | <font color=red>NÃO</font>| <font color=red>NÃO</font> | 
+| [**ONG por Id**](#ong-por-id)|  <font color=blueviolet>[GET]</font> | /ong/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
+| [**Todas as ONG's**](#todas-as-ongs)|  <font color=blueviolet>[GET]</font> | /ongs | <font color=red>NÃO</font>| <font color=red>NÃO</font> | 
 | [**Doar para ONG**](#doar-para-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> |
 | [**Doações recebidas**](#doações-recebidas) | <font color=blueviolet>[GET]</font> |  /ong/donates/{ID} | <font color=green> SIM </font> | <font color=red>NÃO</font>|  
 | [**Ajudar ONG**](#ajudar-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> | 
@@ -251,7 +251,7 @@
 
 ## todas as ongs:
 >### Request
->**<font color=blueviolet>[GET]</font> /users/ongs**
+>**<font color=blueviolet>[GET]</font> /ongs**
 >body **não requer**</br> 
 >authorization:**não requer**
 
