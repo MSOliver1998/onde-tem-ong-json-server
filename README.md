@@ -31,9 +31,10 @@
 ## ONGS
 | Requisição | Metodo | Endpoint | Token? | Body? | 
 | :---: | :---: | :---: | :---: | :---: |
+| [**Cria ong**](#criar-ong) | <font color=green>[POST]</font> |  /users  | <font color=red>NÃO</font> | <font color=green> SIM </font> |
 | [**Editar ONG**](#editar-ong) | <font color=yellow>[PATCH]</font> | /ongs/{id} | <font color=green> SIM </font> | <font color=green> SIM </font>|
 | [**ONG por Id**](#ong-por-id)|  <font color=blueviolet>[GET]</font> | /ong/{id} | <font color=green> SIM </font> | <font color=red>NÃO</font> | 
-| [**Todas as ONG's**](#todas-as-ongs)|  <font color=blueviolet>[GET]</font> | /ongs | <font color=red>NÃO</font>| <font color=red>NÃO</font> | 
+| [**Todas as ONG's**](#todas-as-ongs)|  <font color=blueviolet>[GET]</font> | /ong | <font color=red>NÃO</font>| <font color=red>NÃO</font> | 
 | [**Doar para ONG**](#doar-para-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> |
 | [**Doações recebidas**](#doações-recebidas) | <font color=blueviolet>[GET]</font> |  /ong/donates/{ID} | <font color=green> SIM </font> | <font color=red>NÃO</font>|  
 | [**Ajudar ONG**](#ajudar-ong) | <font color=green>[POST]</font> | /donates | <font color=green> SIM </font> | <font color=green> SIM </font> | 
@@ -205,6 +206,40 @@
 ></br>
 
 # ONGS
+
+## criar ong:
+
+>### Request
+>**<font color=green>[POST] </font>/users**
+
+>#### body
+```json
+    "avatar":"link",
+    "background":"link",
+    "bio":"string",
+	"category":"string",
+    "email": "email",
+    "name": "string",
+    "password": "string",
+    "userType": "ownerOng",
+	"metas": "number",
+```
+>### Response api
+``` json
+    {
+        "accessToken": "string",
+        "user": {
+            "email": "string",
+            "avatar": "string",
+            "background": "string",
+            "name": "string",
+			"metas": "number",
+            "userType": "ownerOng",
+            "id": "number"
+        }
+    }
+``` 
+</br>
 
 ## todas as ongs:
 >### Request
