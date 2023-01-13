@@ -1,115 +1,91 @@
 {
-  "users": [
-    {
-      "email": "ong2@mail.com",
-      "password": "$2a$10$eAEo.Gy8CYYLL1z/363LfOrc4yXb02CDNlCF93uMNK9o0BE97qEny",
-      "avatar": "https://th.bing.com/th/id/OIP.-U-OLlpFDSbM0dE7EBqNGgHaD4?w=311&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      "background": "https://th.bing.com/th/id/OIP.CAcvHLwBeLmIq-RHjBjWPQHaCu?w=309&h=129&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      "category": "crianças",
-      "metas": 2000,
-      "name": "ongTeste",
-      "userType": "ownerOng",
-      "id": 1,
-      "bio": "bla bla bla"
-    },
-    {
-      "email": "admin@mail.com",
-      "password": "$2a$10$ofCGfMATQkGEHN8GWCb7p.GTJTiF01EbSaFQIKs2/vURmy8KTYZPu",
-      "avatar": "https://th.bing.com/th/id/OIP.ncOCV5LVCL8j70Edjgyn6QHaGy?w=199&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      "background": "https://th.bing.com/th/id/OIP.erUrj5Cz3rbYR--457ljMQHaCv?w=318&h=129&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      "bio": "bla bla bla",
-      "name": "admin",
-      "userType": "user",
-      "id": 2
-    },
-    {
-      "email": "ong1@mail.com",
-      "password": "$2a$10$HWYWR3Rpr/mdDywpJ3mZ4.cXmLFN20BcP5zD6RjWPfbq3bPgazVnS",
-      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
-      "bio": "bla bla bla",
-      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
-      "category": "crianças",
-      "metas": 0,
-      "name": "ong 1",
-      "userType": "ownerOng",
-      "id": 3
-    },
-    {
-      "email": "ong3@mail.com",
-      "password": "$2a$10$dNdoi8CP2U5Pw5XwXW4awu2LMW5qEulty4Oz4Zr3owO9l6H98k5RW",
-      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
-      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
-      "bio": "bla bla bla",
-      "category": "crianças",
-      "metas": 0,
-      "name": "ong 3",
-      "userType": "ownerOng",
-      "id": 4
-    },
-    {
-      "email": "ong4@mail.com",
-      "password": "$2a$10$n6IfM8k2MndSRNB7c2pZ2uG7gfjWxTTZqDv2Jrsnuj7hHLLHNGBvG",
-      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
-      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
-      "category": "crianças",
-      "metas": 0,
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "name": "ong 3",
-      "userType": "ownerOng",
-      "id": 5
-    },
-    {
-      "email": "ong5@mail.com",
-      "password": "$2a$10$wSjM9J0kPye2MjbXi2cDsOjUK07GvjlBZbZ8CLOLrLTDVR6NbRKXm",
-      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
-      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
-      "category": "crianças",
-      "metas": 0,
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "name": "ong 3",
-      "userType": "user",
-      "id": 6
-    },
-    {
-      "email": "ong6@mail.com",
-      "password": "$2a$10$zM8por1LbmX0I14gbdpOj.AyGbOerjnsdrAGOByoYs4MiF.kVlQya",
-      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
-      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
-      "category": "crianças",
-      "metas": 0,
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "name": "ong 3",
-      "userType": "ownerOng",
-      "id": 7
-    },
-    {
-      "email": "ong7@mail.com",
-      "password": "$2a$10$dfTh0GIhb8igVWgilLlpheovt/neHPaudA3AfTlI16ZqWzK11P7QK",
-      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
-      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
-      "category": "crianças",
-      "metas": 0,
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "name": "ong 3",
-      "userType": "user",
-      "id": 8
-    }
-  ],
   "donates": [
     {
-      "user": {
-        "userId": 2,
-        "name": "admin",
-        "avatar": "https://th.bing.com/th/id/OIP.ncOCV5LVCL8j70Edjgyn6QHaGy?w=199&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-      },
+      "id": 1,
       "ong": {
-        "ongId": 1,
+        "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
         "name": "ong 1",
-        "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1"
+        "ongId": 1
       },
       "public": true,
-      "value": 1000,
-      "id": 1
+      "user": {
+        "avatar": "https://th.bing.com/th/id/OIP.ncOCV5LVCL8j70Edjgyn6QHaGy?w=199&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "name": "admin",
+        "userId": 2
+      },
+      "value": 1000
+    }
+  ],
+  "users": [
+    {
+      "avatar": "https://th.bing.com/th/id/OIP.qMrSv3oTCf7SpoRcZA64eQAAAA?pid=ImgDet&rs=1",
+      "background": "https://th.bing.com/th/id/R.4f4b301a9c049a11d22054efcf93f4ee?rik=VbiVRPn5efR5qg&pid=ImgRaw&r=0",
+      "bio": "estamos aqui para ajudar o meio ambiente atraves da reciclagem, vamos juntos?",
+      "category": "ambiente",
+      "email": "ong1@mail.com",
+      "id": 1,
+      "metas": 20000,
+      "name": "recycle",
+      "password": "$2a$10$eAEo.Gy8CYYLL1z/363LfOrc4yXb02CDNlCF93uMNK9o0BE97qEny",
+      "userType": "ownerOng"
+    },
+    {
+      "avatar": "https://th.bing.com/th/id/OIP.p5aepZh8OpbpDE8YlmVtWgHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "background": "https://th.bing.com/th/id/R.238ad6d450c1268c4e35eae322c3fad3?rik=Xt7AQ%2fMFng5GpQ&riu=http%3a%2f%2foptclean.com.br%2fwp-content%2fuploads%2f2016%2f11%2fcapa-para-facebook41.jpg&ehk=Lh0UVlcQgaU4TaOmMqbDwGB0b3xPvwVm3NkBLsy8jCk%3d&risl=&pid=ImgRaw&r=0",
+      "bio": "sou um cara apaixonado pelo nosso planeta, me deixa triste a forma que tratamos ele",
+      "email": "admin@mail.com",
+      "id": 2,
+      "name": "Julio César",
+      "password": "$2a$10$ofCGfMATQkGEHN8GWCb7p.GTJTiF01EbSaFQIKs2/vURmy8KTYZPu",
+      "userType": "user"
+    },
+    {
+      "avatar": "https://th.bing.com/th/id/OIP.BjKtNP-GnQP6CRvYaiwRngHaEp?pid=ImgDet&rs=1",
+      "background": "https://fundeu.do/wp-content/uploads/2017/07/siglas1.jpg",
+      "bio": "somos uma ong criada para ajudar na segurança de crianças que são encontrdas perdidas",
+      "category": "crianças",
+      "email": "ong2@mail.com",
+      "id": 3,
+      "metas": 0,
+      "name": "Criança Segura Brasil",
+      "password": "$2a$10$HWYWR3Rpr/mdDywpJ3mZ4.cXmLFN20BcP5zD6RjWPfbq3bPgazVnS",
+      "userType": "ownerOng"
+    },
+    {
+      "avatar": "https://th.bing.com/th/id/R.bcf2131302d30cbf3bc5d645787c0853?rik=HP%2br8zZGB2ZhKA&pid=ImgRaw&r=0",
+      "background": "https://conteudo.imguol.com.br/2013/03/11/o-uol-tecnologia-selecionou-algumas-capas-de-tecnologia-para-facebook-que-vao-deixar-sua-pagina-moderna-para-colocar-a-da-imagem-acima-no-facebook-clique-no-botao-mais-para-abri-la-em-seguida-clique-1363025974277_851x315.jpg",
+      "bio": "bla bla bla",
+      "category": "tecnologia",
+      "email": "ong3@mail.com",
+      "id": 4,
+      "metas": 0,
+      "name": "Techino",
+      "password": "$2a$10$dNdoi8CP2U5Pw5XwXW4awu2LMW5qEulty4Oz4Zr3owO9l6H98k5RW",
+      "userType": "ownerOng"
+    },
+    {
+      "avatar": "https://yt3.ggpht.com/a/AATXAJzRCk-eCLNUeoSU-FICtZ4g3qCMKyx8-zdPeQYN=s900-c-k-c0xffffffff-no-rj-mo",
+      "background": "https://th.bing.com/th/id/OIP.BXyN1Dsa4WLLMGNNNGYxjAHaCb?pid=ImgDet&rs=1",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "category": "alimentação",
+      "email": "ong4@mail.com",
+      "id": 5,
+      "metas": 0,
+      "name": "Banco de Alimentos",
+      "password": "$2a$10$n6IfM8k2MndSRNB7c2pZ2uG7gfjWxTTZqDv2Jrsnuj7hHLLHNGBvG",
+      "userType": "ownerOng"
+    },
+    {
+      "avatar": "https://th.bing.com/th/id/OIP.eOMXNy5VCj6JrM_IB7-SkwHaE7?pid=ImgDet&rs=1",
+      "background": "https://th.bing.com/th/id/OIP.F0kqHO3IGIQMsw1aypD2VQHaCv?w=347&h=129&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "bio": "ajudamos crianças a terem acesso a livros para obterem o habito da leitura",
+      "category": "cultura",
+      "email": "ong5@mail.com",
+      "id": 6,
+      "metas": 0,
+      "name": "Baú da leitura",
+      "password": "$2a$10$wSjM9J0kPye2MjbXi2cDsOjUK07GvjlBZbZ8CLOLrLTDVR6NbRKXm",
+      "userType": "ownerOng"
     }
   ]
 }
