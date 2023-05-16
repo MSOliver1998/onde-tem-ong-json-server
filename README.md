@@ -2,7 +2,6 @@
 
 ### Rodar localmente
 ``` node
-    $: git@github.com:MSOliver1998/first-json-server.git
     $: yarn
     $: yarn add -D json-server json-server-auth
     $: node server.js
